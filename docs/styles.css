@@ -199,6 +199,24 @@ a { color: var(--navy); }
 .footer-brand strong { display: block; color: #fff; font-family: var(--font-display); font-weight: 600; }
 .footer-brand span { font-size: .82rem; }
 .footer-note { margin: 0; font-size: .85rem; }
+.footer-note a { color: #fff; text-decoration: underline; text-underline-offset: 2px; }
+.footer-note a:hover { color: var(--sky); }
+
+/* Policy / legal document page */
+.policy { padding: clamp(2.5rem, 6vw, 4.5rem) 0 clamp(3.5rem, 8vw, 5.5rem); }
+.policy__inner { width: min(46rem, 92%); margin-inline: auto; }
+.policy__doc { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); box-shadow: var(--shadow-sm); padding: clamp(1.6rem, 5vw, 3rem); }
+.policy__head { margin-bottom: 2rem; }
+.policy__head h1 { font-size: clamp(1.9rem, 4.5vw, 2.7rem); margin-bottom: .3em; }
+.policy__lead { color: var(--muted); margin: 0; }
+.policy__doc h2 { font-size: 1.3rem; color: var(--navy); margin: 2.2rem 0 .5em; }
+.policy__doc h2:first-of-type { margin-top: 0; }
+.policy__doc p { color: var(--ink); }
+.policy__doc a { color: var(--green-deep); text-decoration: underline; text-underline-offset: 2px; }
+.policy__doc strong { color: var(--navy-deep); }
+.policy__updated { margin-top: 2.2rem; padding-top: 1.2rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .92rem; font-style: italic; }
+.policy__back { display: inline-flex; align-items: center; gap: .4rem; margin-bottom: 1.4rem; font-weight: 700; font-size: .9rem; color: var(--navy); text-decoration: none; }
+.policy__back:hover { color: var(--green-deep); }
 
 /* WhatsApp float */
 .wa-float { position: fixed; right: 20px; bottom: 20px; z-index: 90; width: 56px; height: 56px; border-radius: 50%; background: var(--wa); color: #fff; display: grid; place-items: center; box-shadow: 0 14px 30px -10px rgba(37,163,102,.8); transition: transform .2s; }
