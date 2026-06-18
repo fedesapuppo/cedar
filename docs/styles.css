@@ -202,8 +202,16 @@ a { color: var(--navy); }
 .footer-note { margin: 0; font-size: .85rem; }
 .footer-note a { color: #fff; text-decoration: underline; text-underline-offset: 2px; }
 .footer-note a:hover { color: var(--sky); }
+.footer-meta { text-align: right; }
 .footer-powered { margin-top: .35rem; opacity: .9; }
-.footer-powered__brand { color: var(--gold); font-weight: 700; letter-spacing: .04em; }
+.footer-powered__brand { color: var(--gold); font-weight: 700; letter-spacing: .04em; animation: pretor-glow 2s ease-in-out infinite; }
+@keyframes pretor-glow {
+  0%, 100% { text-shadow: 0 0 2px rgba(217, 154, 43, .25); }
+  50% { text-shadow: 0 0 10px rgba(217, 154, 43, .9), 0 0 18px rgba(217, 154, 43, .55); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .footer-powered__brand { animation: none; }
+}
 
 /* Policy / legal document page */
 .policy { padding: clamp(2.5rem, 6vw, 4.5rem) 0 clamp(3.5rem, 8vw, 5.5rem); }
@@ -251,6 +259,10 @@ a { color: var(--navy); }
   .compare { grid-template-columns: 1fr; gap: 1.2rem; }
   .compare__vs { padding: 0; }
   .compare__vs span { transform: rotate(90deg); }
+  .footer-inner { flex-direction: column; align-items: center; text-align: center; }
+  .footer-meta { text-align: center; }
+  .footer-sep { display: none; }
+  .footer-privacy { display: block; margin-top: .25rem; }
 }
 
 @media (max-width: 540px) {
