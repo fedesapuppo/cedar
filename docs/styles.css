@@ -202,6 +202,8 @@ a { color: var(--navy); }
 .footer-note { margin: 0; font-size: .85rem; }
 .footer-note a { color: #fff; text-decoration: underline; text-underline-offset: 2px; }
 .footer-note a:hover { color: var(--sky); }
+.footer-powered { margin-top: .35rem; opacity: .9; }
+.footer-powered__brand { color: var(--gold); font-weight: 700; letter-spacing: .04em; }
 
 /* Policy / legal document page */
 .policy { padding: clamp(2.5rem, 6vw, 4.5rem) 0 clamp(3.5rem, 8vw, 5.5rem); }
